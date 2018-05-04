@@ -1,0 +1,31 @@
+<div class="modal fade" id="nuevoUsuario">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        title="Cerrar">&times;</button>
+                <h4 class="modal-title">Nuevo usuario</h4>
+            </div>
+            <div class="modal-body">
+                <form id="formNuevoUsuario" action="../controllers/usuario/addUsuario.php" method="post">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="cuenta" required placeholder="Cuenta" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="clave" required placeholder="Contraseña" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                    <select name="rol" class="form-control" required>
+                        <option value="">Selecciona un nuevo rol</option>
+                        <option value="1">Presidente</option>
+                        <option value="2">Director Administrativo</option>
+                        <option value="3">Vendedor</option>
+                        <option value="4">Administrador del sistema</option>
+                    </select>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

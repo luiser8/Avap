@@ -1,0 +1,19 @@
+/*Estilo para los iconos*/
+.glyphicon-user, .glyphicon-cog, .glyphicon-tasks{
+	font-size: 1.7em;
+}
+/*Formulario*/
+#formLogin{
+	margin-top: 115px;
+}
+img{
+	max-width: 100%;
+}
+
+/*Clases formulario clientes*/
+.mostrar_vehiculo{
+	display: none;
+}
+.mostrar_notas{
+	display: none;
+}

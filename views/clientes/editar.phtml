@@ -1,0 +1,37 @@
+<div class="modal fade" id="editCliente">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Cerrar">&times;</button>
+                <h4 class="modal-title">Editar cliente</h4>
+            </div>
+            <div class="modal-body">
+                <form id="formEditCliente" action="../controllers/clientes/editCliente.php" method="post">
+                    <input type="hidden" name="id_cliente" id="id_cliente">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="nombres" id="new_nombre" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="apellidos" id="new_apellido" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="correo" id="new_correo" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="razon" id="new_razon" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="telefono" id="new_telefono" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="rif" id="new_rif" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="direccion" id="new_direccion" required autocomplete="off">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

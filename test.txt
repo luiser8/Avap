@@ -1,0 +1,19 @@
+  	<table class="table table-responsive">
+        <tr>
+            <th>Cuenta</th>
+            <th>Rol</th>
+            <th>Opciones</th>
+        </tr>
+        <tr>
+            <?php for($i=0; $i<count($usuarios); $i++){ $rs = $usuarios[$i]; ?>
+            <td><?php echo $rs['cuenta'];?></td>
+            <td><?php echo $rs['rol'];?></td>
+            <td>
+                <a href="usuario/editar?id=<?php echo $rs['id_usuario']; ?>" title="Editar perfil" class="btn btn-default glyphicon glyphicon-edit"></a>
+                <?php if(!$_SESSION['cuenta'] == $rs['cuenta']){ ?>
+                    <a href="#" onclick="delUsuario(<?php echo $rs['id_usuario'];?>);" title="Eliminar perfil" class="btn btn-default glyphicon glyphicon-trash"></a>
+                <?php } ?>
+                </td>
+        </tr>
+            <?php } ?>
+</table>

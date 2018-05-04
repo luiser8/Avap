@@ -1,0 +1,37 @@
+<div class="modal fade" id="nuevoCliente">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        title="Cerrar">&times;</button>
+                <h4 class="modal-title">Nuevo cliente</h4>
+            </div>
+            <div class="modal-body">
+                <form id="formNuevoCliente" action="../controllers/clientes/addCliente.php" method="post">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="nombres" id="nombres" required placeholder="Nombres" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="apellidos" id="apellidos" required placeholder="Apellidos" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="rif" id="rif" required placeholder="RIF" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="direccion" id="direccion" required placeholder="Dirección" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="correo" id="correo" required placeholder="Correo" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="razon" id="razon" required placeholder="Razon social" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="telefono" id="telefono" required placeholder="Telefono" autocomplete="off">
+                    </div>                 
+                    <input class="btn btn-primary" type="submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
